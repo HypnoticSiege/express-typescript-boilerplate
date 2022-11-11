@@ -1,0 +1,23 @@
+{
+    "name": "express-typescript-boilerplate",
+    "version": "1.0.0",
+    "description": "A simple boilerplate for using Express JS w/ TypeScipt and EJS :)",
+    "main": "index.js",
+    "scripts": {
+        "clean": "rimraf dist",
+        "build": "yarn clean && tsc -p .",
+        "start": "node dist/index.js"
+    },
+    "keywords": [],
+    "author": "Luis Quezada - luis@quzada.nl",
+    "license": "ISC",
+    "dependencies": {
+        "ejs": "^3.1.8",
+        "express": "^4.18.2"
+    },
+    "devDependencies": {
+        "@types/node": "^18.11.9",
+        "ts-node": "^10.9.1",
+        "typescript": "^4.8.4"
+    }
+}
