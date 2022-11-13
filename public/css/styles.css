@@ -1,9 +1,31 @@
-html {
-    background-color: #2A2A2A;
-    color: #FFFFFF;
+/* Placeholder */
+
+.avatar.idle:before {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    display: block;
+    border-radius: 9999px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(253 224 71 / var(--tw-text-opacity));
+    width: 15%;
+    height: 15%;
+    top: 7%;
+    right: 7%;
+    box-shadow: 0 0 0 2px hsl(var(--b1));
 }
 
-a {
-    color: #FFFFFF;
-    text-decoration: none;
+.avatar.dnd:before {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    display: block;
+    border-radius: 9999px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(225 29 72 / var(--tw-text-opacity));
+    width: 15%;
+    height: 15%;
+    top: 7%;
+    right: 7%;
+    box-shadow: 0 0 0 2px hsl(var(--b1));
 }

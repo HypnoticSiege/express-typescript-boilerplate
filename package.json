@@ -5,8 +5,10 @@
     "main": "index.js",
     "scripts": {
         "clean": "rimraf dist",
-        "build": "yarn clean && tsc -p .",
-        "start": "node dist/index.js"
+        "tailwind-build": "npx tailwindcss -i ./public/css/tailwind/input.css -o ./public/css/tailwind/output.css",
+        "build": "yarn clean && tsc -p . && yarn tailwind-build",
+        "start": "node dist/index.js",
+        "tailwind": "npx tailwindcss -i ./public/css/tailwind/input.css -o ./public/css/tailwind/output.css --watch"
     },
     "keywords": [],
     "author": "Luis Quezada - luis@quzada.nl",
@@ -17,6 +19,8 @@
     },
     "devDependencies": {
         "@types/node": "^18.11.9",
+        "daisyui": "^2.39.1",
+        "tailwindcss": "^3.2.4",
         "ts-node": "^10.9.1",
         "typescript": "^4.8.4"
     }
