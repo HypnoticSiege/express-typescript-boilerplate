@@ -1,5 +1,5 @@
 # Express TypeScript Boilerplate
- A simple boilerplate for using Express JS w/ TypeScipt and EJS.
+ A simple boilerplate for using Express JS w/ TypeScipt and EJS. This also includes Tailwind CSS and DaisyUI for styling already setup.
 
 ## Who is this for?
 This boilerplate is for anyone who wants to use Express JS with TypeScript and EJS. It's a simple app that has a few basic routes and a simple EJS templating system. Focus on actually building your app and not setting up the boring stuff.
